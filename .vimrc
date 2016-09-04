@@ -56,6 +56,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = '|'
 let g:airline#extensions#tabline#left_alt_sep = '>'
+let g:buffergator_suppress_keymaps = 1
 " Quickly update airline when exiting insert mode
 set laststatus=2
 set ttimeoutlen=20
@@ -69,6 +70,11 @@ set softtabstop=4
 " " Remaps and shortcuts
 " Toggle Tagbar
 nmap <leader>a :TagbarToggle<CR>
+" Toggle NERDTree
+map <leader>n :NERDTreeToggle<CR>
+" Toggle Buffergator
+map <leader>b :BuffergatorToggle<CR>
+
 
 " Move b/w splts
 nnoremap <C-J> <C-W><C-J>
